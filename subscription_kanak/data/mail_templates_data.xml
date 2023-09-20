@@ -1,4 +1,4 @@
-<?xml version="1.0" ?>
+<?xml version="1.0" encoding="UTF-8"?>
 <odoo>
     <record id="reminder_mail_for_delivery" model="mail.template">
         <field name="name">Subscription: Reminder mail for delivery</field>

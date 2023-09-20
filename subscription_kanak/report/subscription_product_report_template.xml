@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <odoo>
     <template id="report_subscription_order_document">
         <t t-call="web.external_layout">
@@ -6,7 +6,7 @@
             <t t-set="address">
                 <div t-field="doc.partner_id" t-options='{"widget": "contact", "fields": ["address", "name"], "no_marker": True}' />
                 <p t-if="doc.partner_id.vat">
-                    <t t-esc="doc.company_id.country_id.vat_label or 'Tax ID'" />: <span t-field="doc.partner_id.vat" /></p>
+                    <t t-out="doc.company_id.country_id.vat_label or 'Tax ID'" />: <span t-field="doc.partner_id.vat" /></p>
             </t>
             <div class="page">
                 <div class="oe_structure" />
